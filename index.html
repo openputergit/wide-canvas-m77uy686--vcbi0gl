@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neubrutalism Empty Box</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .neu-box {
+            background: white;
+            border: 3px solid black;
+            box-shadow: 5px 5px 0px 0px #000000;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .neu-box:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px 0px #000000;
+        }
+
+        @media (max-width: 640px) {
+            .neu-box {
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#FFE5E5] min-h-screen flex items-center justify-center p-4">
+    <!-- Creating a neubrutalism style empty container that could be used as a starting point -->
+    <div class="neu-box w-full max-w-md p-8 bg-white rounded-lg">
+        <!-- Placeholder content -->
+        <div class="text-center">
+            <h1 class="text-2xl font-bold mb-4">Empty Container</h1>
+            <p class="text-gray-600">This is a neubrutalism style container ready for content</p>
+        </div>
+    </div>
+
+    <script>
+        // Ready for any interactivity that might be needed
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Neubrutalism container ready!');
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
